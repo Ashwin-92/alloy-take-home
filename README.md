@@ -3,7 +3,7 @@ Alloy Take home assessment
 
 This repository can be used to set up a AWS VPC, EC2 and RDS instance in the us-east-1 region.  All of this is meant to be set up on a DEV environment so it has not been secured as a production level environment.  I do have some accesskey and secret key set up during VPC creation but that key has been rotated already and is no longer in use.  I would like to add that the resources can be upgraded to a larger instance or more availabilty for the RDS but I am working with the free tier and did not want to incur costs.
 
-The VPC module has been seperated from the creation of the EC2 and RDS instance so it can be updated or reused seperately if needed.  In the VPC module folder you will see that the VPC includes a few other items such as internet gateway, 3 subnets (1 public, 2 private) and others.
+The VPC module has been seperated from the creation of the EC2 and RDS instance so it can be updated or reused seperately if needed.  In the VPC module folder, in main.tf you will see that the VPC includes a few other items such as internet gateway, 3 subnets (1 public, 2 private) and others.
   
 The EC2 instance is a copy of an AMI I found and it is an Ubuntu OS created on a t2.micro instance.  I enabled DNS hostnames within the VPC so the user is able to connect to the ubuntu instance using SSH.  
 
